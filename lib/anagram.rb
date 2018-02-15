@@ -10,8 +10,9 @@ class Anagram
     #we want to return an empty array for no matches
     #or return an array including matches
     #iterate over the array passed to match
-    word_list.each do |word|
-      word.split("").sort
+    word_list.collect do |word|
+      word.split("").sort == @word.split("").sort
+    end
   end
     
 end
