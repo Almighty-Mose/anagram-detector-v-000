@@ -7,10 +7,6 @@ class Anagram
   end
     
   def match(word_list)
-    #we want to return an empty array for no matches
-    #or return an array including matches
-    #iterate over the array passed to match
     word_list.select{|word| word.split("").sort == @word.split("").sort}
   end
-    
 end
