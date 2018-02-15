@@ -7,7 +7,7 @@ class Anagram
   end
     
   def match(word_list)
-    
+    #we want to return an empty array for no matches
   end
     
 end
